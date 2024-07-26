@@ -36,7 +36,6 @@ const updateSong = catchError(async(req, res) => {
 }) 
 
 module.exports = {
-  getAllSong,
   createSong,
   getOne,
   deleteSong,
