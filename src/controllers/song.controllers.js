@@ -1,10 +1,6 @@
 const catchError = require('../utils/catchError');
 const Song = require('../models/song.model');
 
-const getAllSong = catchError(async(req, res) => {
-    return res.json()
-});
-
 const createSong = catchError(async(req, res) => {
   const { body } = req
   const song = await Song.create(body)
